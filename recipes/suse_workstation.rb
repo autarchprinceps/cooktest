@@ -20,6 +20,6 @@ include_recipe 'vim'
 
 include_recipe 'vagrant'
 
-%w[vagrant-omnibus vagrant-lxc vagrant-aws vagrant-berkshelf vagrant-cachier vagrant-libvirt vagrant-scaleway vagrant-bundler vagrant-git].each do |vp|
+%w[vagrant-omnibus vagrant-lxc vagrant-aws vagrant-berkshelf vagrant-cachier vagrant-scaleway vagrant-bundler vagrant-git].each do |vp| # vagrant-libvirt 
 	vagrant_plugin vp
 end
